@@ -62,6 +62,31 @@ Emme-Subic Transport Corporation Payroll
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._18">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._19">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._20">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._21">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._22">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._23">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -98,6 +123,11 @@ Emme-Subic Transport Corporation Payroll
 </summary>
 </member>
 <member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources.admin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources.Icon_PNG">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

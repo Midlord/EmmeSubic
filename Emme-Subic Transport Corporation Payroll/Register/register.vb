@@ -4,8 +4,6 @@ Public Class register
 
     Dim connection As New SqlConnection("Server = DESKTOP-BBDJH6Q; Database = EmmeSubic; Integrated Security = true")
 
-
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Dim command As New SqlCommand("insert into Users(firstName,lastName, userName, password, birthDate, role) values (@firstName,@lastName, @userName, @password, @birthDate, @role)", connection)
@@ -37,7 +35,7 @@ Public Class register
 
     End Sub
 
-    Private Sub RegFirstName_TextChanged(sender As Object, e As EventArgs) Handles RegFirstName.TextChanged
+    Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

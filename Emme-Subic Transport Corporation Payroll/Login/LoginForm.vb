@@ -77,5 +77,29 @@ Public Class LoginForm
 
     End Sub
 
+    Private Sub PictureExit_Click(sender As Object, e As EventArgs) Handles PictureExit.Click
+        Me.Close()
+    End Sub
 
+    Private Sub PictureMax_Click(sender As Object, e As EventArgs) Handles PictureMax.Click
+        Me.WindowState = FormWindowState.Maximized
+        PictureRest.Visible = True
+        PictureMax.Visible = False
+    End Sub
+
+    Private Sub PictureMin_Click(sender As Object, e As EventArgs) Handles PictureMin.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+    Private Sub PictureRest_Click(sender As Object, e As EventArgs) Handles PictureRest.Click
+        Me.WindowState = FormWindowState.Normal
+        PictureRest.Visible = False
+        PictureMax.Visible = True
+
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Me.Show()
+
+    End Sub
 End Class
