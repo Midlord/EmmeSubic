@@ -40,6 +40,7 @@ Partial Class LoginForm
         Me.PictureMax = New System.Windows.Forms.PictureBox()
         Me.PictureMin = New System.Windows.Forms.PictureBox()
         Me.PictureRest = New System.Windows.Forms.PictureBox()
+        Me.hidId = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -228,6 +229,14 @@ Partial Class LoginForm
         Me.PictureRest.TabIndex = 13
         Me.PictureRest.TabStop = False
         '
+        'hidId
+        '
+        Me.hidId.Location = New System.Drawing.Point(545, 451)
+        Me.hidId.Name = "hidId"
+        Me.hidId.Size = New System.Drawing.Size(100, 27)
+        Me.hidId.TabIndex = 11
+        Me.hidId.Visible = False
+        '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -237,6 +246,7 @@ Partial Class LoginForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1200, 623)
+        Me.Controls.Add(Me.hidId)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
@@ -286,4 +296,5 @@ Partial Class LoginForm
     Friend WithEvents PictureMin As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureRest As PictureBox
+    Friend WithEvents hidId As TextBox
 End Class
