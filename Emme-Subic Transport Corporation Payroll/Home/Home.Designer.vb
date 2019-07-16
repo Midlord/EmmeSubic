@@ -255,6 +255,7 @@ Partial Class Home
         '
         Me.PictureBox7.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources.Icon_PNG
         Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox7.Location = New System.Drawing.Point(4, 4)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(25, 25)
@@ -290,6 +291,7 @@ Partial Class Home
         Me.PictureRest.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.PictureRest.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._20
         Me.PictureRest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureRest.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureRest.Location = New System.Drawing.Point(1141, 3)
         Me.PictureRest.Name = "PictureRest"
         Me.PictureRest.Size = New System.Drawing.Size(25, 25)

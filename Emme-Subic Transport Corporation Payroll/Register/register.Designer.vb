@@ -35,14 +35,28 @@ Partial Class register
         Me.RegUserName = New System.Windows.Forms.TextBox()
         Me.RegLastName = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureExit = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureMax = New System.Windows.Forms.PictureBox()
+        Me.PictureMin = New System.Windows.Forms.PictureBox()
+        Me.PictureRest = New System.Windows.Forms.PictureBox()
+        Me.Backbut = New System.Windows.Forms.PictureBox()
+        Me.Back = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureExit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureMax, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureMin, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureRest, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Backbut, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.TableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
@@ -183,6 +197,7 @@ Partial Class register
         '
         'Button1
         '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
@@ -190,37 +205,122 @@ Partial Class register
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(480, 43)
-        Me.Button1.TabIndex = 9
+        Me.Button1.TabIndex = 6
         Me.Button1.Text = "Add New Authorized Employee"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Panel1
         '
-        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(12, 2)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(79, 43)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Back"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.PictureExit)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Controls.Add(Me.PictureMax)
+        Me.Panel1.Controls.Add(Me.PictureMin)
+        Me.Panel1.Controls.Add(Me.PictureRest)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1200, 33)
+        Me.Panel1.TabIndex = 13
         '
-        'PictureBox1
+        'Label6
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.White
-        Me.PictureBox1.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._18
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(20, 24)
-        Me.PictureBox1.TabIndex = 12
-        Me.PictureBox1.TabStop = False
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label6.Location = New System.Drawing.Point(35, 8)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(287, 13)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "Emme-Subic Transport Corporation New Admin Registration"
+        '
+        'PictureExit
+        '
+        Me.PictureExit.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.PictureExit.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._21
+        Me.PictureExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureExit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureExit.Location = New System.Drawing.Point(1172, 3)
+        Me.PictureExit.Name = "PictureExit"
+        Me.PictureExit.Size = New System.Drawing.Size(25, 25)
+        Me.PictureExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureExit.TabIndex = 13
+        Me.PictureExit.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources.Icon_PNG
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureMax
+        '
+        Me.PictureMax.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.PictureMax.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._20
+        Me.PictureMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureMax.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureMax.Location = New System.Drawing.Point(1141, 3)
+        Me.PictureMax.Name = "PictureMax"
+        Me.PictureMax.Size = New System.Drawing.Size(25, 25)
+        Me.PictureMax.TabIndex = 12
+        Me.PictureMax.TabStop = False
+        '
+        'PictureMin
+        '
+        Me.PictureMin.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.PictureMin.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._22
+        Me.PictureMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureMin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureMin.Location = New System.Drawing.Point(1110, 4)
+        Me.PictureMin.Name = "PictureMin"
+        Me.PictureMin.Size = New System.Drawing.Size(25, 25)
+        Me.PictureMin.TabIndex = 11
+        Me.PictureMin.TabStop = False
+        '
+        'PictureRest
+        '
+        Me.PictureRest.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.PictureRest.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._20
+        Me.PictureRest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureRest.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureRest.Location = New System.Drawing.Point(1141, 3)
+        Me.PictureRest.Name = "PictureRest"
+        Me.PictureRest.Size = New System.Drawing.Size(25, 25)
+        Me.PictureRest.TabIndex = 13
+        Me.PictureRest.TabStop = False
+        '
+        'Backbut
+        '
+        Me.Backbut.BackColor = System.Drawing.Color.White
+        Me.Backbut.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._18
+        Me.Backbut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Backbut.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Backbut.Location = New System.Drawing.Point(13, 46)
+        Me.Backbut.Name = "Backbut"
+        Me.Backbut.Size = New System.Drawing.Size(20, 24)
+        Me.Backbut.TabIndex = 18
+        Me.Backbut.TabStop = False
+        '
+        'Back
+        '
+        Me.Back.BackColor = System.Drawing.Color.White
+        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Back.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Back.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.Back.ForeColor = System.Drawing.Color.Black
+        Me.Back.Location = New System.Drawing.Point(4, 36)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(79, 43)
+        Me.Back.TabIndex = 17
+        Me.Back.Text = "Back"
+        Me.Back.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Back.UseVisualStyleBackColor = False
         '
         'register
         '
@@ -228,17 +328,27 @@ Partial Class register
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._5
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1204, 627)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(1200, 623)
+        Me.Controls.Add(Me.Backbut)
+        Me.Controls.Add(Me.Back)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "register"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "New Admin Registration"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureExit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureMax, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureMin, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureRest, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Backbut, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -255,6 +365,13 @@ Partial Class register
     Friend WithEvents RegUserName As TextBox
     Friend WithEvents RegLastName As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label6 As Label
+    Friend WithEvents PictureExit As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureMax As PictureBox
+    Friend WithEvents PictureMin As PictureBox
+    Friend WithEvents PictureRest As PictureBox
+    Friend WithEvents Backbut As PictureBox
+    Friend WithEvents Back As Button
 End Class

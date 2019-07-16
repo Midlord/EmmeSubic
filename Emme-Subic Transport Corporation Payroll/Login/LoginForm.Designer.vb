@@ -40,7 +40,7 @@ Partial Class LoginForm
         Me.PictureMax = New System.Windows.Forms.PictureBox()
         Me.PictureMin = New System.Windows.Forms.PictureBox()
         Me.PictureRest = New System.Windows.Forms.PictureBox()
-        Me.hidId = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -79,6 +79,7 @@ Partial Class LoginForm
         'TbxUserName
         '
         Me.TbxUserName.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TbxUserName.ForeColor = System.Drawing.Color.Black
         Me.TbxUserName.Location = New System.Drawing.Point(545, 267)
         Me.TbxUserName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TbxUserName.Name = "TbxUserName"
@@ -116,6 +117,7 @@ Partial Class LoginForm
         Me.ButtonLogin.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ButtonLogin.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.ButtonLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonLogin.Location = New System.Drawing.Point(545, 379)
         Me.ButtonLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonLogin.Name = "ButtonLogin"
@@ -229,13 +231,17 @@ Partial Class LoginForm
         Me.PictureRest.TabIndex = 13
         Me.PictureRest.TabStop = False
         '
-        'hidId
+        'Label5
         '
-        Me.hidId.Location = New System.Drawing.Point(545, 451)
-        Me.hidId.Name = "hidId"
-        Me.hidId.Size = New System.Drawing.Size(100, 27)
-        Me.hidId.TabIndex = 11
-        Me.hidId.Visible = False
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(563, 184)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(118, 46)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "LOGIN"
         '
         'LoginForm
         '
@@ -246,7 +252,7 @@ Partial Class LoginForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1200, 623)
-        Me.Controls.Add(Me.hidId)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
@@ -296,5 +302,5 @@ Partial Class LoginForm
     Friend WithEvents PictureMin As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureRest As PictureBox
-    Friend WithEvents hidId As TextBox
+    Friend WithEvents Label5 As Label
 End Class

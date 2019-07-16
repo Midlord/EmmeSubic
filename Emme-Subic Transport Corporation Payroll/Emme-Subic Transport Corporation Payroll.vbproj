@@ -90,10 +90,31 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmmeSubicDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmmeSubicDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmmeSubicDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmmeSubicDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmmeSubicDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmmeSubicDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Home\AddNewEmployee.Designer.vb">
       <DependentUpon>AddNewEmployee.vb</DependentUpon>
     </Compile>
     <Compile Include="Home\AddNewEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\AdminHistory.Designer.vb">
+      <DependentUpon>AdminHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home\AdminHistory.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login\LoginForm.vb">
@@ -130,16 +151,19 @@
     <Compile Include="Register\register.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\users.Designer.vb">
-      <DependentUpon>users.vb</DependentUpon>
+    <Compile Include="Users\RegisteredAdmin.Designer.vb">
+      <DependentUpon>RegisteredAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Users\users.vb">
+    <Compile Include="Users\RegisteredAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Home\AddNewEmployee.resx">
       <DependentUpon>AddNewEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\AdminHistory.resx">
+      <DependentUpon>AdminHistory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
@@ -156,11 +180,44 @@
     <EmbeddedResource Include="Register\register.resx">
       <DependentUpon>register.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\users.resx">
-      <DependentUpon>users.vb</DependentUpon>
+    <EmbeddedResource Include="Users\RegisteredAdmin.resx">
+      <DependentUpon>RegisteredAdmin.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="EmmeSubicDataSet.xsc">
+      <DependentUpon>EmmeSubicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmmeSubicDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmmeSubicDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmmeSubicDataSet.xss">
+      <DependentUpon>EmmeSubicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmmeSubicDataSet1.xsc">
+      <DependentUpon>EmmeSubicDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmmeSubicDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmmeSubicDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmmeSubicDataSet1.xss">
+      <DependentUpon>EmmeSubicDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmmeSubicDataSet2.xsc">
+      <DependentUpon>EmmeSubicDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EmmeSubicDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmmeSubicDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmmeSubicDataSet2.xss">
+      <DependentUpon>EmmeSubicDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -261,6 +318,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
