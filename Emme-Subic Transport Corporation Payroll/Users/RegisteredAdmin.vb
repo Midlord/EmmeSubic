@@ -10,6 +10,9 @@ Public Class RegisteredAdmin
     End Sub
 
     Private Sub RegisteredAdmin_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+
+        UsersTable.DataSource = GetUsersList()
+
         UsersTable.BorderStyle = BorderStyle.None
         UsersTable.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249)
         UsersTable.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
@@ -31,7 +34,8 @@ Public Class RegisteredAdmin
 
         Using conn As New SqlConnection(connString)
 
-            Using cmd As New SqlCommand("SELECT CONCAT(firstName,' ',lastName) as Name, userName, birthDate, role FROM [EmmeSubic].[dbo].[Users]", conn)
+            Using cmd As New SqlCommand("SELECT CONCAT(firstName,' ',lastName) as Name, userName, birthDate, role FROM [EmmeSubic].[dbo].[Users]
+                                        where isDeleted = 0", conn)
 
                 conn.Open()
 
@@ -90,26 +94,33 @@ Public Class RegisteredAdmin
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles RemoveUser.Click
 
         If UsersTable.SelectedRows.Count > 0 Then
-            RemoveUser.Visible = True
+            RemoveUser.Enabled = True
         Else
-            RemoveUser.Visible = False
+            register.Enabled = False
+
         End If
+
 
         Dim connString As String = ConfigurationManager.ConnectionStrings("dbx").ConnectionString
 
         Dim conn As New SqlConnection(connString)
 
 
-        Using command As New SqlCommand("Delete * from [EmmeSubic].[dbo].[Users] where userName = @userName", conn)
+        Using command As New SqlCommand("Update [EmmeSubic].[dbo].[Users] SET isDeleted = 1 where userName = @userName", conn)
 
-            command.Parameters.Add("@userName", SqlDbType.VarChar).Value = RemoveUser.Text
+            command.Parameters.Add("@userName", SqlDbType.VarChar).Value = UsersTable.SelectedRows(0).Cells(1).Value.ToString
             Try
+                conn.Open()
                 command.ExecuteNonQuery()
-
+                MsgBox("User Successfully deleted!")
+                conn.Close()
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
         End Using
     End Sub
 
+    Private Sub UsersTable_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles UsersTable.CellContentClick
+
+    End Sub
 End Class

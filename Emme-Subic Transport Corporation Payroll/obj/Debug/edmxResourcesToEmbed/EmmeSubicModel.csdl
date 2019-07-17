@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmmeSubicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="mname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="lname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="birthdate" Type="DateTime" Precision="0" />
+    <Property Name="birthplace" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Cstatus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="CellphoneNo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="datehired" Type="DateTime" Precision="0" />
+    <Property Name="EmployeeStats" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Religion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Height" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Weight" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="EmailAdd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Caddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Paddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="role" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="isDeleted" Type="Byte" />
+    <Property Name="EmployeeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="EmmeSubicEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />
+  </EntityContainer>
+</Schema>

@@ -216,7 +216,6 @@ Partial Class RegisteredAdmin
         Me.RemoveUser.TabIndex = 71
         Me.RemoveUser.Text = "Remove User"
         Me.RemoveUser.UseVisualStyleBackColor = False
-        Me.RemoveUser.Visible = False
         '
         'Label1
         '

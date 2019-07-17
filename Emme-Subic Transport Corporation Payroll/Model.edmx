@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EmmeSubicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="UserDetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fname" Type="varchar" MaxLength="255" />
+          <Property Name="mname" Type="varchar" MaxLength="255" />
+          <Property Name="lname" Type="varchar" MaxLength="255" />
+          <Property Name="birthdate" Type="date" />
+          <Property Name="birthplace" Type="varchar" MaxLength="255" />
+          <Property Name="Cstatus" Type="varchar" MaxLength="255" />
+          <Property Name="Age" Type="int" />
+          <Property Name="CellphoneNo" Type="varchar" MaxLength="255" />
+          <Property Name="datehired" Type="date" />
+          <Property Name="EmployeeStats" Type="varchar" MaxLength="255" />
+          <Property Name="Gender" Type="varchar" MaxLength="255" />
+          <Property Name="Religion" Type="varchar" MaxLength="255" />
+          <Property Name="Height" Type="varchar" MaxLength="255" />
+          <Property Name="Weight" Type="varchar" MaxLength="255" />
+          <Property Name="EmailAdd" Type="varchar" MaxLength="255" />
+          <Property Name="Caddress" Type="text" />
+          <Property Name="Paddress" Type="text" />
+          <Property Name="role" Type="varchar" MaxLength="255" />
+          <Property Name="Picture" Type="image" />
+          <Property Name="created_at" Type="datetime" />
+          <Property Name="isDeleted" Type="tinyint" />
+          <Property Name="EmployeeID" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="EmmeSubicModelStoreContainer">
+          <EntitySet Name="UserDetails" EntityType="Self.UserDetails" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EmmeSubicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="UserDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="mname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="lname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="birthdate" Type="DateTime" Precision="0" />
+          <Property Name="birthplace" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Cstatus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="CellphoneNo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="datehired" Type="DateTime" Precision="0" />
+          <Property Name="EmployeeStats" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Religion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Height" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Weight" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EmailAdd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Caddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Paddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="role" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="created_at" Type="DateTime" Precision="3" />
+          <Property Name="isDeleted" Type="Byte" />
+          <Property Name="EmployeeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="EmmeSubicEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EmmeSubicModelStoreContainer" CdmEntityContainer="EmmeSubicEntities">
+          <EntitySetMapping Name="UserDetails">
+            <EntityTypeMapping TypeName="EmmeSubicModel.UserDetail">
+              <MappingFragment StoreEntitySet="UserDetails">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="mname" ColumnName="mname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+                <ScalarProperty Name="birthplace" ColumnName="birthplace" />
+                <ScalarProperty Name="Cstatus" ColumnName="Cstatus" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="CellphoneNo" ColumnName="CellphoneNo" />
+                <ScalarProperty Name="datehired" ColumnName="datehired" />
+                <ScalarProperty Name="EmployeeStats" ColumnName="EmployeeStats" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Religion" ColumnName="Religion" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="EmailAdd" ColumnName="EmailAdd" />
+                <ScalarProperty Name="Caddress" ColumnName="Caddress" />
+                <ScalarProperty Name="Paddress" ColumnName="Paddress" />
+                <ScalarProperty Name="role" ColumnName="role" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="created_at" ColumnName="created_at" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
