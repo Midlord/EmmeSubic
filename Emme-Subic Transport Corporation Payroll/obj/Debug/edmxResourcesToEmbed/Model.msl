@@ -27,6 +27,31 @@
           <ScalarProperty Name="created_at" ColumnName="created_at" />
           <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
           <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="sss" ColumnName="sss" />
+          <ScalarProperty Name="pagibig" ColumnName="pagibig" />
+          <ScalarProperty Name="philhealth" ColumnName="philhealth" />
+          <ScalarProperty Name="tin" ColumnName="tin" />
+          <ScalarProperty Name="driverlicenseNumber" ColumnName="driverlicenseNumber" />
+          <ScalarProperty Name="driverlicenseRestrictionCode" ColumnName="driverlicenseRestrictionCode" />
+          <ScalarProperty Name="driverlicenseExpdate" ColumnName="driverlicenseExpdate" />
+          <ScalarProperty Name="ctapExpdate" ColumnName="ctapExpdate" />
+          <ScalarProperty Name="medtestExpdate" ColumnName="medtestExpdate" />
+          <ScalarProperty Name="medtestRemarks" ColumnName="medtestRemarks" />
+          <ScalarProperty Name="drugtestExpdate" ColumnName="drugtestExpdate" />
+          <ScalarProperty Name="drugtestMethamphetamine" ColumnName="drugtestMethamphetamine" />
+          <ScalarProperty Name="Tetrahydrocannabinol" ColumnName="Tetrahydrocannabinol" />
+          <ScalarProperty Name="nbiclearanceExpdate" ColumnName="nbiclearanceExpdate" />
+          <ScalarProperty Name="policeclearanceExpdate" ColumnName="policeclearanceExpdate" />
+          <ScalarProperty Name="brgyclearanceExpdate" ColumnName="brgyclearanceExpdate" />
+          <ScalarProperty Name="atmNumber" ColumnName="atmNumber" />
+          <ScalarProperty Name="educationalBackground" ColumnName="educationalBackground" />
+          <ScalarProperty Name="employementStatus" ColumnName="employementStatus" />
+          <ScalarProperty Name="dateofConversion" ColumnName="dateofConversion" />
+          <ScalarProperty Name="numberofYears" ColumnName="numberofYears" />
+          <ScalarProperty Name="performanceObsStart" ColumnName="performanceObsStart" />
+          <ScalarProperty Name="performanceObsEnd" ColumnName="performanceObsEnd" />
+          <ScalarProperty Name="probationaryStart" ColumnName="probationaryStart" />
+          <ScalarProperty Name="probationaryEnd" ColumnName="probationaryEnd" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

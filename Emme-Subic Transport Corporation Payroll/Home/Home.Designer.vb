@@ -26,7 +26,6 @@ Partial Class Home
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnNewAdmin = New System.Windows.Forms.Button()
         Me.btnList = New System.Windows.Forms.Button()
-        Me.btnNewEmployee = New System.Windows.Forms.Button()
         Me.btnHistory = New System.Windows.Forms.Button()
         Me.btnAdmin = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -76,9 +75,9 @@ Partial Class Home
         Me.btnNewAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnNewAdmin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNewAdmin.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNewAdmin.Location = New System.Drawing.Point(778, 98)
+        Me.btnNewAdmin.Location = New System.Drawing.Point(605, 98)
         Me.btnNewAdmin.Name = "btnNewAdmin"
-        Me.btnNewAdmin.Size = New System.Drawing.Size(358, 205)
+        Me.btnNewAdmin.Size = New System.Drawing.Size(334, 205)
         Me.btnNewAdmin.TabIndex = 3
         Me.btnNewAdmin.Text = "ADD NEW " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ADMINISTRATOR"
         Me.btnNewAdmin.UseVisualStyleBackColor = False
@@ -90,26 +89,12 @@ Partial Class Home
         Me.btnList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnList.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnList.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnList.Location = New System.Drawing.Point(431, 98)
+        Me.btnList.Location = New System.Drawing.Point(258, 98)
         Me.btnList.Name = "btnList"
         Me.btnList.Size = New System.Drawing.Size(341, 205)
         Me.btnList.TabIndex = 2
-        Me.btnList.Text = " DRIVER LIST"
+        Me.btnList.Text = "DRIVERS"
         Me.btnList.UseVisualStyleBackColor = False
-        '
-        'btnNewEmployee
-        '
-        Me.btnNewEmployee.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnNewEmployee.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.btnNewEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnNewEmployee.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnNewEmployee.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNewEmployee.Location = New System.Drawing.Point(84, 98)
-        Me.btnNewEmployee.Name = "btnNewEmployee"
-        Me.btnNewEmployee.Size = New System.Drawing.Size(341, 205)
-        Me.btnNewEmployee.TabIndex = 1
-        Me.btnNewEmployee.Text = "ADD NEW DRIVER EMPLOYEE "
-        Me.btnNewEmployee.UseVisualStyleBackColor = False
         '
         'btnHistory
         '
@@ -145,7 +130,7 @@ Partial Class Home
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.PictureBox1.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._17
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(93, 160)
+        Me.PictureBox1.Location = New System.Drawing.Point(268, 173)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(51, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -158,7 +143,7 @@ Partial Class Home
         Me.PictureBox2.BackColor = System.Drawing.Color.Aquamarine
         Me.PictureBox2.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._16
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(480, 171)
+        Me.PictureBox2.Location = New System.Drawing.Point(325, 173)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox2.TabIndex = 9
@@ -170,7 +155,7 @@ Partial Class Home
         Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.PictureBox3.BackgroundImage = Global.Emme_Subic_Transport_Corporation_Payroll.My.Resources.Resources._14
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(834, 160)
+        Me.PictureBox3.Location = New System.Drawing.Point(665, 156)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -214,7 +199,7 @@ Partial Class Home
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.PictureExit)
         Me.Panel1.Controls.Add(Me.PictureBox7)
@@ -231,7 +216,7 @@ Partial Class Home
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Control
         Me.Label4.Location = New System.Drawing.Point(35, 8)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(324, 20)
@@ -318,7 +303,6 @@ Partial Class Home
         Me.Controls.Add(Me.btnHistory)
         Me.Controls.Add(Me.btnAdmin)
         Me.Controls.Add(Me.btnLogout)
-        Me.Controls.Add(Me.btnNewEmployee)
         Me.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -347,7 +331,6 @@ Partial Class Home
     Friend WithEvents btnLogout As Button
     Friend WithEvents btnNewAdmin As Button
     Friend WithEvents btnList As Button
-    Friend WithEvents btnNewEmployee As Button
     Friend WithEvents btnHistory As Button
     Friend WithEvents btnAdmin As Button
     Friend WithEvents PictureBox1 As PictureBox

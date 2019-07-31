@@ -27,6 +27,31 @@
     <Property Name="created_at" Type="DateTime" Precision="3" />
     <Property Name="isDeleted" Type="Byte" />
     <Property Name="EmployeeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sss" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pagibig" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="philhealth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="driverlicenseNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="driverlicenseRestrictionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="driverlicenseExpdate" Type="DateTime" Precision="0" />
+    <Property Name="ctapExpdate" Type="DateTime" Precision="0" />
+    <Property Name="medtestExpdate" Type="DateTime" Precision="0" />
+    <Property Name="medtestRemarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="drugtestExpdate" Type="DateTime" Precision="0" />
+    <Property Name="drugtestMethamphetamine" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tetrahydrocannabinol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nbiclearanceExpdate" Type="DateTime" Precision="0" />
+    <Property Name="policeclearanceExpdate" Type="DateTime" Precision="0" />
+    <Property Name="brgyclearanceExpdate" Type="DateTime" Precision="0" />
+    <Property Name="atmNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="educationalBackground" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="employementStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dateofConversion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="numberofYears" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="performanceObsStart" Type="DateTime" Precision="0" />
+    <Property Name="performanceObsEnd" Type="DateTime" Precision="0" />
+    <Property Name="probationaryStart" Type="DateTime" Precision="0" />
+    <Property Name="probationaryEnd" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityContainer Name="EmmeSubicEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />

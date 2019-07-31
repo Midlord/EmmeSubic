@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmmeSubicModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TripSheet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="tripDate" Type="date" />
+    <Property Name="fromLocation" Type="varchar" MaxLength="255" />
+    <Property Name="toLocation" Type="varchar" MaxLength="255" />
+    <Property Name="driverHelper" Type="varchar" MaxLength="255" />
+    <Property Name="broker" Type="varchar" MaxLength="255" />
+    <Property Name="containerNumber" Type="varchar" MaxLength="255" />
+    <Property Name="activityType" Type="varchar" MaxLength="255" />
+    <Property Name="Remarks" Type="text" />
+    <Property Name="WaybillNumber" Type="text" />
+    <Property Name="rate" Type="float" />
+  </EntityType>
+  <EntityContainer Name="EmmeSubicModel1StoreContainer">
+    <EntitySet Name="TripSheet" EntityType="Self.TripSheet" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

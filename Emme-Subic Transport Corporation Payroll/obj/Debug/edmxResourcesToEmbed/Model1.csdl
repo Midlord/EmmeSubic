@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmmeSubicModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TripSheet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="tripDate" Type="DateTime" Precision="0" />
+    <Property Name="fromLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="toLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="driverHelper" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="broker" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="containerNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="activityType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WaybillNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="rate" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="EmmeSubicEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TripSheets" EntityType="Self.TripSheet" />
+  </EntityContainer>
+</Schema>

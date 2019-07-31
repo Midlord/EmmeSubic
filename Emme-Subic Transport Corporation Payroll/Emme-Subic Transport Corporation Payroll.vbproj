@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -63,12 +63,22 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Entity.Design.Extensibility, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -90,31 +100,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmmeSubicDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmmeSubicDataSet.xsd</DependentUpon>
+    <Compile Include="DriverList\DriverArchive.Designer.vb">
+      <DependentUpon>DriverArchive.vb</DependentUpon>
     </Compile>
-    <Compile Include="EmmeSubicDataSet1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmmeSubicDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="EmmeSubicDataSet2.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmmeSubicDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Home\AddNewEmployee.Designer.vb">
-      <DependentUpon>AddNewEmployee.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Home\AddNewEmployee.vb">
+    <Compile Include="DriverList\DriverArchive.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home\AdminHistory.Designer.vb">
+    <Compile Include="DriverList\DriverList.Designer.vb">
+      <DependentUpon>DriverList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverList\DriverList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHistory\AdminHistory.Designer.vb">
       <DependentUpon>AdminHistory.vb</DependentUpon>
     </Compile>
-    <Compile Include="Home\AdminHistory.vb">
+    <Compile Include="AdminHistory\AdminHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverList\DriverPayroll.Designer.vb">
+      <DependentUpon>DriverPayroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverList\DriverPayroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverList\DriverPrint.Designer.vb">
+      <DependentUpon>DriverPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverList\DriverPrint.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login\LoginForm.vb">
@@ -129,6 +142,36 @@
     </Compile>
     <Compile Include="Home\Home.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -145,25 +188,52 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Register\register.Designer.vb">
-      <DependentUpon>register.vb</DependentUpon>
+    <Compile Include="Admin Register\Adminregister.Designer.vb">
+      <DependentUpon>Adminregister.vb</DependentUpon>
     </Compile>
-    <Compile Include="Register\register.vb">
+    <Compile Include="Admin Register\Adminregister.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\RegisteredAdmin.Designer.vb">
+    <Compile Include="Payroll\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\TripSheet.Designer.vb">
+      <DependentUpon>TripSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\TripSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registered Admin\RegisteredAdmin.Designer.vb">
       <DependentUpon>RegisteredAdmin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Users\RegisteredAdmin.vb">
+    <Compile Include="Registered Admin\RegisteredAdmin.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripSheet.vb">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetail.vb">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Home\AddNewEmployee.resx">
-      <DependentUpon>AddNewEmployee.vb</DependentUpon>
+    <EmbeddedResource Include="DriverList\DriverArchive.resx">
+      <DependentUpon>DriverArchive.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home\AdminHistory.resx">
+    <EmbeddedResource Include="DriverList\DriverList.resx">
+      <DependentUpon>DriverList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHistory\AdminHistory.resx">
       <DependentUpon>AdminHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverList\DriverPayroll.resx">
+      <DependentUpon>DriverPayroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverList\DriverPrint.resx">
+      <DependentUpon>DriverPrint.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
@@ -177,46 +247,35 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register\register.resx">
-      <DependentUpon>register.vb</DependentUpon>
+    <EmbeddedResource Include="Admin Register\Adminregister.resx">
+      <DependentUpon>Adminregister.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\RegisteredAdmin.resx">
+    <EmbeddedResource Include="Payroll\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\TripSheet.resx">
+      <DependentUpon>TripSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registered Admin\RegisteredAdmin.resx">
       <DependentUpon>RegisteredAdmin.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="EmmeSubicDataSet.xsc">
-      <DependentUpon>EmmeSubicDataSet.xsd</DependentUpon>
+    <EntityDeploy Include="Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Emme_Subic_Transport_Corporation_Payroll.Emme_Subic_Transport_Corporation_Payroll.TripSheet.datasource" />
+    <None Include="Emme_Subic_Transport_Corporation_Payroll.Emme_Subic_Transport_Corporation_Payroll.UserDetail.datasource" />
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
-    <None Include="EmmeSubicDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EmmeSubicDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="EmmeSubicDataSet.xss">
-      <DependentUpon>EmmeSubicDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="EmmeSubicDataSet1.xsc">
-      <DependentUpon>EmmeSubicDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="EmmeSubicDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EmmeSubicDataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="EmmeSubicDataSet1.xss">
-      <DependentUpon>EmmeSubicDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="EmmeSubicDataSet2.xsc">
-      <DependentUpon>EmmeSubicDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="EmmeSubicDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EmmeSubicDataSet2.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="EmmeSubicDataSet2.xss">
-      <DependentUpon>EmmeSubicDataSet2.xsd</DependentUpon>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -230,6 +289,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -321,6 +381,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.vb</LastGenOutput>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.vb</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

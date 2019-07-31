@@ -1,22 +1,43 @@
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.Driverlist.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.AdminHistory.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.DriverPayroll.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.DriverPrint.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.LoginForm.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.Home.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.Resources.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.Adminregister.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.Form1.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.TripSheet.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.RegisteredAdmin.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbproj.GenerateResource.cache
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbproj.CoreCompileInputs.cache
 C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\Emme-Subic Transport Corporation Payroll.exe.config
 C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\Emme-Subic Transport Corporation Payroll.exe
 C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\Emme-Subic Transport Corporation Payroll.pdb
 C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\Emme-Subic Transport Corporation Payroll.xml
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbprojAssemblyReference.cache
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.Resources.resources
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbproj.GenerateResource.cache
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbproj.CoreCompileInputs.cache
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\EntityFramework.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\MySql.Data.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\EnvDTE.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\Google.Protobuf.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\stdole.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\EntityFramework.xml
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\MySql.Data.xml
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbproj.CopyComplete
 C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.exe
 C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.xml
 C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.pdb
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.Home.resources
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.register.resources
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.LoginForm.resources
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.AddNewEmployee.resources
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\MySql.Data.dll
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\Google.Protobuf.dll
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\bin\Debug\MySql.Data.xml
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbproj.CopyComplete
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.RegisteredAdmin.resources
-C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.AdminHistory.resources
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme-Subic Transport Corporation Payroll.vbprojAssemblyReference.cache
+C:\Users\jc\source\repos\Emme-Subic Transport Corporation Payroll\Emme-Subic Transport Corporation Payroll\obj\Debug\Emme_Subic_Transport_Corporation_Payroll.DriverArchive.resources

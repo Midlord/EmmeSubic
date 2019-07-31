@@ -36,6 +36,31 @@ Namespace Emme_Subic_Transport_Corporation_Payroll
         Public Property created_at As Nullable(Of Date)
         Public Property isDeleted As Nullable(Of Byte)
         Public Property EmployeeID As String
+        Public Property sss As String
+        Public Property pagibig As String
+        Public Property philhealth As String
+        Public Property tin As String
+        Public Property driverlicenseNumber As String
+        Public Property driverlicenseRestrictionCode As String
+        Public Property driverlicenseExpdate As Nullable(Of Date)
+        Public Property ctapExpdate As Nullable(Of Date)
+        Public Property medtestExpdate As Nullable(Of Date)
+        Public Property medtestRemarks As String
+        Public Property drugtestExpdate As Nullable(Of Date)
+        Public Property drugtestMethamphetamine As String
+        Public Property Tetrahydrocannabinol As String
+        Public Property nbiclearanceExpdate As Nullable(Of Date)
+        Public Property policeclearanceExpdate As Nullable(Of Date)
+        Public Property brgyclearanceExpdate As Nullable(Of Date)
+        Public Property atmNumber As String
+        Public Property educationalBackground As String
+        Public Property employementStatus As String
+        Public Property dateofConversion As String
+        Public Property numberofYears As String
+        Public Property performanceObsStart As Nullable(Of Date)
+        Public Property performanceObsEnd As Nullable(Of Date)
+        Public Property probationaryStart As Nullable(Of Date)
+        Public Property probationaryEnd As Nullable(Of Date)
     
     End Class
 

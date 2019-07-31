@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmmeSubicModel1StoreContainer" CdmEntityContainer="EmmeSubicEntities1">
+    <EntitySetMapping Name="TripSheets">
+      <EntityTypeMapping TypeName="EmmeSubicModel1.TripSheet">
+        <MappingFragment StoreEntitySet="TripSheet">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="tripDate" ColumnName="tripDate" />
+          <ScalarProperty Name="fromLocation" ColumnName="fromLocation" />
+          <ScalarProperty Name="toLocation" ColumnName="toLocation" />
+          <ScalarProperty Name="driverHelper" ColumnName="driverHelper" />
+          <ScalarProperty Name="broker" ColumnName="broker" />
+          <ScalarProperty Name="containerNumber" ColumnName="containerNumber" />
+          <ScalarProperty Name="activityType" ColumnName="activityType" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="WaybillNumber" ColumnName="WaybillNumber" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

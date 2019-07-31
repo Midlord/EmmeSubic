@@ -32,6 +32,31 @@
           <Property Name="created_at" Type="datetime" />
           <Property Name="isDeleted" Type="tinyint" />
           <Property Name="EmployeeID" Type="varchar" MaxLength="50" />
+          <Property Name="sss" Type="varchar" MaxLength="50" />
+          <Property Name="pagibig" Type="varchar" MaxLength="50" />
+          <Property Name="philhealth" Type="varchar" MaxLength="50" />
+          <Property Name="tin" Type="varchar" MaxLength="50" />
+          <Property Name="driverlicenseNumber" Type="varchar" MaxLength="50" />
+          <Property Name="driverlicenseRestrictionCode" Type="varchar" MaxLength="50" />
+          <Property Name="driverlicenseExpdate" Type="date" />
+          <Property Name="ctapExpdate" Type="date" />
+          <Property Name="medtestExpdate" Type="date" />
+          <Property Name="medtestRemarks" Type="varchar" MaxLength="50" />
+          <Property Name="drugtestExpdate" Type="date" />
+          <Property Name="drugtestMethamphetamine" Type="varchar" MaxLength="50" />
+          <Property Name="Tetrahydrocannabinol" Type="varchar" MaxLength="50" />
+          <Property Name="nbiclearanceExpdate" Type="date" />
+          <Property Name="policeclearanceExpdate" Type="date" />
+          <Property Name="brgyclearanceExpdate" Type="date" />
+          <Property Name="atmNumber" Type="varchar" MaxLength="50" />
+          <Property Name="educationalBackground" Type="varchar" MaxLength="50" />
+          <Property Name="employementStatus" Type="varchar" MaxLength="50" />
+          <Property Name="dateofConversion" Type="varchar" MaxLength="50" />
+          <Property Name="numberofYears" Type="varchar" MaxLength="50" />
+          <Property Name="performanceObsStart" Type="date" />
+          <Property Name="performanceObsEnd" Type="date" />
+          <Property Name="probationaryStart" Type="date" />
+          <Property Name="probationaryEnd" Type="date" />
         </EntityType>
         <EntityContainer Name="EmmeSubicModelStoreContainer">
           <EntitySet Name="UserDetails" EntityType="Self.UserDetails" Schema="dbo" store:Type="Tables" />
@@ -68,6 +93,31 @@
           <Property Name="created_at" Type="DateTime" Precision="3" />
           <Property Name="isDeleted" Type="Byte" />
           <Property Name="EmployeeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="sss" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pagibig" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="philhealth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="tin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="driverlicenseNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="driverlicenseRestrictionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="driverlicenseExpdate" Type="DateTime" Precision="0" />
+          <Property Name="ctapExpdate" Type="DateTime" Precision="0" />
+          <Property Name="medtestExpdate" Type="DateTime" Precision="0" />
+          <Property Name="medtestRemarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="drugtestExpdate" Type="DateTime" Precision="0" />
+          <Property Name="drugtestMethamphetamine" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tetrahydrocannabinol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="nbiclearanceExpdate" Type="DateTime" Precision="0" />
+          <Property Name="policeclearanceExpdate" Type="DateTime" Precision="0" />
+          <Property Name="brgyclearanceExpdate" Type="DateTime" Precision="0" />
+          <Property Name="atmNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="educationalBackground" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="employementStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="dateofConversion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="numberofYears" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="performanceObsStart" Type="DateTime" Precision="0" />
+          <Property Name="performanceObsEnd" Type="DateTime" Precision="0" />
+          <Property Name="probationaryStart" Type="DateTime" Precision="0" />
+          <Property Name="probationaryEnd" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityContainer Name="EmmeSubicEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />
@@ -104,6 +154,31 @@
                 <ScalarProperty Name="created_at" ColumnName="created_at" />
                 <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="sss" ColumnName="sss" />
+                <ScalarProperty Name="pagibig" ColumnName="pagibig" />
+                <ScalarProperty Name="philhealth" ColumnName="philhealth" />
+                <ScalarProperty Name="tin" ColumnName="tin" />
+                <ScalarProperty Name="driverlicenseNumber" ColumnName="driverlicenseNumber" />
+                <ScalarProperty Name="driverlicenseRestrictionCode" ColumnName="driverlicenseRestrictionCode" />
+                <ScalarProperty Name="driverlicenseExpdate" ColumnName="driverlicenseExpdate" />
+                <ScalarProperty Name="ctapExpdate" ColumnName="ctapExpdate" />
+                <ScalarProperty Name="medtestExpdate" ColumnName="medtestExpdate" />
+                <ScalarProperty Name="medtestRemarks" ColumnName="medtestRemarks" />
+                <ScalarProperty Name="drugtestExpdate" ColumnName="drugtestExpdate" />
+                <ScalarProperty Name="drugtestMethamphetamine" ColumnName="drugtestMethamphetamine" />
+                <ScalarProperty Name="Tetrahydrocannabinol" ColumnName="Tetrahydrocannabinol" />
+                <ScalarProperty Name="nbiclearanceExpdate" ColumnName="nbiclearanceExpdate" />
+                <ScalarProperty Name="policeclearanceExpdate" ColumnName="policeclearanceExpdate" />
+                <ScalarProperty Name="brgyclearanceExpdate" ColumnName="brgyclearanceExpdate" />
+                <ScalarProperty Name="atmNumber" ColumnName="atmNumber" />
+                <ScalarProperty Name="educationalBackground" ColumnName="educationalBackground" />
+                <ScalarProperty Name="employementStatus" ColumnName="employementStatus" />
+                <ScalarProperty Name="dateofConversion" ColumnName="dateofConversion" />
+                <ScalarProperty Name="numberofYears" ColumnName="numberofYears" />
+                <ScalarProperty Name="performanceObsStart" ColumnName="performanceObsStart" />
+                <ScalarProperty Name="performanceObsEnd" ColumnName="performanceObsEnd" />
+                <ScalarProperty Name="probationaryStart" ColumnName="probationaryStart" />
+                <ScalarProperty Name="probationaryEnd" ColumnName="probationaryEnd" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

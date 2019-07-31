@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EmmeSubicModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TripSheet">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="user_id" Type="int" />
+          <Property Name="tripDate" Type="date" />
+          <Property Name="fromLocation" Type="varchar" MaxLength="255" />
+          <Property Name="toLocation" Type="varchar" MaxLength="255" />
+          <Property Name="driverHelper" Type="varchar" MaxLength="255" />
+          <Property Name="broker" Type="varchar" MaxLength="255" />
+          <Property Name="containerNumber" Type="varchar" MaxLength="255" />
+          <Property Name="activityType" Type="varchar" MaxLength="255" />
+          <Property Name="Remarks" Type="text" />
+          <Property Name="WaybillNumber" Type="text" />
+          <Property Name="rate" Type="float" />
+        </EntityType>
+        <EntityContainer Name="EmmeSubicModel1StoreContainer">
+          <EntitySet Name="TripSheet" EntityType="Self.TripSheet" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EmmeSubicModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TripSheet">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" />
+          <Property Name="tripDate" Type="DateTime" Precision="0" />
+          <Property Name="fromLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="toLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="driverHelper" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="broker" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="containerNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="activityType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="WaybillNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="rate" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="EmmeSubicEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TripSheets" EntityType="Self.TripSheet" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EmmeSubicModel1StoreContainer" CdmEntityContainer="EmmeSubicEntities1">
+          <EntitySetMapping Name="TripSheets">
+            <EntityTypeMapping TypeName="EmmeSubicModel1.TripSheet">
+              <MappingFragment StoreEntitySet="TripSheet">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="tripDate" ColumnName="tripDate" />
+                <ScalarProperty Name="fromLocation" ColumnName="fromLocation" />
+                <ScalarProperty Name="toLocation" ColumnName="toLocation" />
+                <ScalarProperty Name="driverHelper" ColumnName="driverHelper" />
+                <ScalarProperty Name="broker" ColumnName="broker" />
+                <ScalarProperty Name="containerNumber" ColumnName="containerNumber" />
+                <ScalarProperty Name="activityType" ColumnName="activityType" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="WaybillNumber" ColumnName="WaybillNumber" />
+                <ScalarProperty Name="rate" ColumnName="rate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

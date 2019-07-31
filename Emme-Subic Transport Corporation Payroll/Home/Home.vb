@@ -2,53 +2,57 @@
 Imports System.Configuration
 Public Class Home
 
-    Dim connection As New SqlConnection("Server=DESKTOP-BBDJH6Q; Database = EmmeSubic; Integrated Security = true")
+
     Private Sub BtnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        Dim dob As DateTime = Date.Now
-        Dim command As New SqlCommand("select id, firstName, lastName, userName from Users 
+        Dim connString As String = ConfigurationManager.ConnectionStrings("dbx").ConnectionString
+        Using connection As New SqlConnection(connString)
+
+
+            Dim dob As DateTime = Date.Now
+            Dim command As New SqlCommand("select id, firstName, lastName, userName from Users 
                                         where id = @userId", connection)
-        Dim com As New SqlCommand("insert into Histories (user_id,action,login_date) VALUES (@userId,@action,@loginDate)", connection)
+            Dim com As New SqlCommand("insert into Histories (user_id,action,login_date) VALUES (@userId,@action,@loginDate)", connection)
 
-        command.Parameters.Add("@userId", SqlDbType.Int).Value = LoginForm.user_id
+            command.Parameters.Add("@userId", SqlDbType.Int).Value = LoginForm.user_id
 
-        Dim reader As SqlDataReader
-        Dim adapter As New SqlDataAdapter(command)
+            Dim reader As SqlDataReader
+            Dim adapter As New SqlDataAdapter(command)
 
-        Dim table As New DataTable()
-        adapter.Fill(table)
+            Dim table As New DataTable()
+            adapter.Fill(table)
 
-        If table.Rows.Count() <= 0 Then
-            'failed
-            MessageBox.Show("Username Or Password Are Invalid")
-        Else
-            connection.Open()
-            reader = command.ExecuteReader()
+            If table.Rows.Count() <= 0 Then
+                'failed
+                MessageBox.Show("Username Or Password Are Invalid")
+            Else
+                connection.Open()
+                reader = command.ExecuteReader()
 
-            Dim Name As String = ""
-            While reader.Read()
-                Console.WriteLine(String.Format("{0}, {1}, {2}, {3}",
-                   reader(0), reader(1), reader(2), reader(3)))
-                LoginForm.user_id = reader(0)
-                Name = reader(1) + " " + reader(2)
-            End While
-            connection.Close()
-            com.Parameters.Add("@userId", SqlDbType.Int).Value = LoginForm.user_id
-            com.Parameters.Add("@action", SqlDbType.Text).Value = Name + " admin logout at " + dob
-            com.Parameters.Add("@loginDate", SqlDbType.DateTime).Value = dob
+                Dim Name As String = ""
+                While reader.Read()
+                    Console.WriteLine(String.Format("{0}, {1}, {2}, {3}",
+                       reader(0), reader(1), reader(2), reader(3)))
+                    LoginForm.user_id = reader(0)
+                    Name = reader(1) + " " + reader(2)
+                End While
+                connection.Close()
+                com.Parameters.Add("@userId", SqlDbType.Int).Value = LoginForm.user_id
+                com.Parameters.Add("@action", SqlDbType.Text).Value = Name + " admin logout at " + dob
+                com.Parameters.Add("@loginDate", SqlDbType.DateTime).Value = dob
 
-            connection.Open()
-            'hide this page
+                connection.Open()
+                'hide this page
 
-            'Redirect to homepage
-            com.ExecuteNonQuery()
-            MsgBox("Logout Successfully!")
+                'Redirect to homepage
+                com.ExecuteNonQuery()
+                MsgBox("Logout Successfully!")
 
-            Me.Close()
-            LoginForm.Show()
-            connection.Close()
-        End If
+                Me.Close()
+                LoginForm.Show()
+                connection.Close()
+            End If
 
-
+        End Using
 
     End Sub
 
@@ -57,7 +61,7 @@ Public Class Home
             MsgBox("You can't create a new admin! Please Contact the Main Administrator!")
         Else
             Me.Hide()
-            register.Show()
+            Adminregister.Show()
         End If
 
     End Sub
@@ -81,9 +85,9 @@ Public Class Home
         Me.Close()
     End Sub
 
-    Private Sub BtnNewEmployee_Click(sender As Object, e As EventArgs) Handles btnNewEmployee.Click
+    Private Sub BtnNewEmployee_Click(sender As Object, e As EventArgs)
         Me.Hide()
-        AddNewEmployee.Show()
+
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
@@ -112,5 +116,10 @@ Public Class Home
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
 
+    End Sub
+
+    Private Sub BtnList_Click(sender As Object, e As EventArgs) Handles btnList.Click
+        Me.Hide()
+        Driverlist.Show()
     End Sub
 End Class

@@ -27,6 +27,31 @@
     <Property Name="created_at" Type="datetime" />
     <Property Name="isDeleted" Type="tinyint" />
     <Property Name="EmployeeID" Type="varchar" MaxLength="50" />
+    <Property Name="sss" Type="varchar" MaxLength="50" />
+    <Property Name="pagibig" Type="varchar" MaxLength="50" />
+    <Property Name="philhealth" Type="varchar" MaxLength="50" />
+    <Property Name="tin" Type="varchar" MaxLength="50" />
+    <Property Name="driverlicenseNumber" Type="varchar" MaxLength="50" />
+    <Property Name="driverlicenseRestrictionCode" Type="varchar" MaxLength="50" />
+    <Property Name="driverlicenseExpdate" Type="date" />
+    <Property Name="ctapExpdate" Type="date" />
+    <Property Name="medtestExpdate" Type="date" />
+    <Property Name="medtestRemarks" Type="varchar" MaxLength="50" />
+    <Property Name="drugtestExpdate" Type="date" />
+    <Property Name="drugtestMethamphetamine" Type="varchar" MaxLength="50" />
+    <Property Name="Tetrahydrocannabinol" Type="varchar" MaxLength="50" />
+    <Property Name="nbiclearanceExpdate" Type="date" />
+    <Property Name="policeclearanceExpdate" Type="date" />
+    <Property Name="brgyclearanceExpdate" Type="date" />
+    <Property Name="atmNumber" Type="varchar" MaxLength="50" />
+    <Property Name="educationalBackground" Type="varchar" MaxLength="50" />
+    <Property Name="employementStatus" Type="varchar" MaxLength="50" />
+    <Property Name="dateofConversion" Type="varchar" MaxLength="50" />
+    <Property Name="numberofYears" Type="varchar" MaxLength="50" />
+    <Property Name="performanceObsStart" Type="date" />
+    <Property Name="performanceObsEnd" Type="date" />
+    <Property Name="probationaryStart" Type="date" />
+    <Property Name="probationaryEnd" Type="date" />
   </EntityType>
   <EntityContainer Name="EmmeSubicModelStoreContainer">
     <EntitySet Name="UserDetails" EntityType="Self.UserDetails" Schema="dbo" store:Type="Tables" />
